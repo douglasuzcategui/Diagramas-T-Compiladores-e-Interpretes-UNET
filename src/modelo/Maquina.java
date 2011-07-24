@@ -8,7 +8,6 @@ import java.awt.Polygon;
 public class Maquina extends Figura {
 
     private int base;
-    private int alto;
     private int ptsX [] = new int [3];
     private int ptsY [] = new int [3];
     private Polygon triangulo = new Polygon();
@@ -19,7 +18,7 @@ public class Maquina extends Figura {
         this.seleccionada = false;
     }
 
-    public void setBase() {
+    public void setBase(int base) {
         this.base = base;
     }   
 

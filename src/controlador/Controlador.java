@@ -9,6 +9,7 @@ import Vista.Vista;
 import modelo.Circulo;
 import modelo.Cuadrado;
 import modelo.Maquina;
+import modelo.Programa;
 import modelo.Figura;
 import modelo.Modelo;
 
@@ -56,10 +57,10 @@ public class Controlador {
 		if(SwingUtilities.isLeftMouseButton(ev)){ 			//Click boton izquierdo selecciona figura
 			seleccionada=this.getFiguraEn(ev.getPoint());
 		}else if(SwingUtilities.isRightMouseButton(ev)){		//click boton izquierdo añade figura tipo cuadrado
-			this.anyadirFigura(new Maquina(ev.getPoint(),40));			
+			this.anyadirFigura(new Programa(ev.getPoint(),50,40));			
 		}else if(SwingUtilities.isMiddleMouseButton(ev))//click boton medio añade figura tipo circulo
 		{
-			this.anyadirFigura(new Circulo(ev.getPoint(),40));
+			this.anyadirFigura(new Maquina(ev.getPoint(),40));
 		}
 		vista.repaint();		
 	}

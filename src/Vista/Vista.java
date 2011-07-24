@@ -7,12 +7,9 @@ import java.awt.Graphics2D;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
-
 import modelo.Modelo;
 import modelo.Figura;
 import javax.swing.JPanel;
-
-
 import controlador.Controlador;
 
 
